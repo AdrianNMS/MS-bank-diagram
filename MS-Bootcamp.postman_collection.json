@@ -1,0 +1,1765 @@
+{
+	"info": {
+		"_postman_id": "d8d7aaf0-c39d-44c2-9c6a-cf37378ffdae",
+		"name": "MS-Bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22927007"
+	},
+	"item": [
+		{
+			"name": "Actives",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active/62f179523e898a2cf9d6d51e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"62f179523e898a2cf9d6d51e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\" : \"63014cea071d657efb8b6451\",\r\n    \"activeType\" : 1,\r\n    \"credits\" : [\r\n        {\r\n            \"creditMont\" : 100.0\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/active",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"62f179523e898a2cf9d6d51e\",\r\n    \"clientId\": \"62edbc767ba3a05551fb10d6\",\r\n    \"activeType\": \"COMPANY_CREDIT\",\r\n    \"credits\": [\r\n        {\r\n            \"id\": \"62f179523e898a2cf9d6d51d\",\r\n            \"creditMont\": 160.0\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/active/62f179523e898a2cf9d6d51e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"62f179523e898a2cf9d6d51e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active/62f9c33444c867272839e16f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"62f9c33444c867272839e16f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active/type/62f179523e898a2cf9d6d51e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"type",
+								"62f179523e898a2cf9d6d51e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkCreditCard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active/creditcard/62f1781d72f2306321b30a6d/2002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"creditcard",
+								"62f1781d72f2306321b30a6d",
+								"2002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMont",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active/mont/62f9d055293ff77bd391a855/62f9d055293ff77bd391a854",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"mont",
+								"62f9d055293ff77bd391a855",
+								"62f9d055293ff77bd391a854"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDebt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active/debt/63028f1d3b8a3d0bbc07e9e6/63028f1d3b8a3d0bbc07e9e5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"debt",
+								"63028f1d3b8a3d0bbc07e9e6",
+								"63028f1d3b8a3d0bbc07e9e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clientDebt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active/debt/client/63014cea071d657efb8b6451",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"debt",
+								"client",
+								"63014cea071d657efb8b6451"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "currentCredit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/active/credit/63028f1d3b8a3d0bbc07e9e6/63028f1d3b8a3d0bbc07e9e5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"active",
+								"credit",
+								"63028f1d3b8a3d0bbc07e9e6",
+								"63028f1d3b8a3d0bbc07e9e5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api Gateway",
+			"item": [
+				{
+					"name": "Test1",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "TestGateway",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movements",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/movement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/movement/62f1781d72f2306321b30a6d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement",
+								"62f1781d72f2306321b30a6d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"debitCardId\": \"A001\",\r\n    \"clientId\": \"63014cea071d657efb8b6451\",\r\n    \"typeMovement\" : 0,\r\n    \"mont\" : 1,\r\n    \"comissionMont\" : 0,\r\n    \"pasiveReceiverId\" : \"63014d87790ad01dfe0b1c47\",\r\n    \"isThirdPartyMovement\" : false\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/movement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"62f2bbb64b12fa7acc75d059\",\r\n    \"pasiveId\": \"62f2bad9372acf53ea6a0783\",\r\n    \"clientId\": \"62edbc767ba3a05551fb10d6\",\r\n    \"typeMovement\": \"WITHDRAWALS\",\r\n    \"mont\": 2000.0,\r\n    \"comissionMont\": 0.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/movement/62f2bbb64b12fa7acc75d059",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement",
+								"62f2bbb64b12fa7acc75d059"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/movement/62f44bce28f51c519a94bf57",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement",
+								"62f44bce28f51c519a94bf57"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListByClientId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/movement/clientMovements/62f4416d0dd4ae688c5481cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement",
+								"clientMovements",
+								"62f4416d0dd4ae688c5481cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BalanceClientId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/movement/balance/62f9d0177333ef1d4a96e39d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement",
+								"balance",
+								"62f9d0177333ef1d4a96e39d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "report",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/movement/report?max=17-08-2022&min=10-08-2022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement",
+								"report"
+							],
+							"query": [
+								{
+									"key": "max",
+									"value": "17-08-2022"
+								},
+								{
+									"key": "min",
+									"value": "10-08-2022"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "first10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/movement/report/debit/A001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"movement",
+								"report",
+								"debit",
+								"A001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parameters",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\" : 1,\r\n    \"firstname\" : \"ADRIAN NORVIC\",\r\n    \"lastName\" : \"MELGAREJO SIGUAS\",\r\n    \"genre\" : 0,\r\n    \"documentId\" : \"12345678\",\r\n    \"phoneNumber\" : \"12345678\",\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"clientData\" : \r\n    {\r\n        \"savingAccount\" : \"123\",\r\n        \"currentAccount\" : \"123\",\r\n        \"fixedTermAccount\" : \"123\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/api/parameter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"parameter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/api/parameter/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"parameter",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":1002,\r\n    \"clientType\":0,\r\n    \"name\": \"Cuenta plazo fijo - normal\",\r\n    \"comissionPercentage\":0,\r\n    \"transactionDay\":\"true\",\r\n    \"maxMovementPerMonth\":\"1\",\r\n    \"maxMovement\":2,\r\n    \"percentageMaxMovement\":0.1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/api/parameter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"parameter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"62f30e7c0cb78f51a22719aa\",\r\n    \"code\": 1000,\r\n    \"value\": \"3\",\r\n    \"name\": \"Pasivo-Ahorros-MaxMovimiento\",\r\n    \"argument\": \"100\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/api/parameter/62f30e7c0cb78f51a22719aa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"parameter",
+								"62f30e7c0cb78f51a22719aa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/api/parameter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"parameter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/api/parameter/catalogue/1/1001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"parameter",
+								"catalogue",
+								"1",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "init",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/api/parameter/init",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"parameter",
+								"init"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pasives",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/pasive",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"pasive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/pasive/62f4416d0dd4ae688c5481cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"pasive",
+								"62f4416d0dd4ae688c5481cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\" : \"63014cea071d657efb8b6451\",\r\n    \"pasivesType\" : 0,\r\n    \"mont\" : 10000,\r\n    \"specificDay\" : \"10-08-2022\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/pasive",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"pasive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"createdDate\": \"2022-08-14 20:43:32\",\r\n    \"id\": \"62f9a4c42c17372331f87a9c\",\r\n    \"clientId\": \"62f1781d72f2306321b30a6d\",\r\n    \"pasivesType\": \"FIXEDTERM\",\r\n    \"mont\": 20000.0,\r\n    \"specificDay\": \"10-08-2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/pasive/62f9a4c42c17372331f87a9c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"pasive",
+								"62f9a4c42c17372331f87a9c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/pasive/62f9a4c42c17372331f87a9c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"pasive",
+								"62f9a4c42c17372331f87a9c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/pasive/type/63014d87790ad01dfe0b1c47",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"pasive",
+								"type",
+								"63014d87790ad01dfe0b1c47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMont",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/pasive/mont/62f9d0177333ef1d4a96e39d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"pasive",
+								"mont",
+								"62f9d0177333ef1d4a96e39d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setMont",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mont\" : 2000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/pasive/mont/62f4416d0dd4ae688c5481cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"pasive",
+								"mont",
+								"62f4416d0dd4ae688c5481cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CircuitBreaker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/actuator/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/client/62f1781d72f2306321b30a6d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"62f1781d72f2306321b30a6d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\" : 0,\r\n    \"firstname\" : \"ADRIAN NORVIC\",\r\n    \"lastName\" : \"MELGAREJO SIGUAS\",\r\n    \"genre\" : 0,\r\n    \"documentId\" : \"12345678\",\r\n    \"phoneNumber\" : \"12345678\",\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"personal\" : \r\n    {\r\n        \"personalType\" : 0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"id\": \"62f1781d72f2306321b30a6d\",\r\n            \"type\": \"COMPANY\",\r\n            \"firstname\": \"ADRIAN NORVIC\",\r\n            \"lastName\": \"MELGAREJO SIGUAS\",\r\n            \"genre\": \"MALE\",\r\n            \"documentId\": \"12345678\",\r\n            \"phoneNumber\": \"12345678\",\r\n            \"email\": \"admin@gmail.com\",\r\n            \"clientData\": {\r\n                \"savingAccount\": \"123\",\r\n                \"currentAccount\": \"123\",\r\n                \"fixedTermAccounts\": [\r\n                    \"123\"\r\n                ]\r\n                    \r\n                }\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/client/62f1781d72f2306321b30a6d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"62f1781d72f2306321b30a6d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/client/62f150800cb49311e29b80f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"62f150800cb49311e29b80f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetParam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/client/param/63014cea071d657efb8b6451/1000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"param",
+								"63014cea071d657efb8b6451",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VIP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/client/vip/63014cea071d657efb8b6451",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"vip",
+								"63014cea071d657efb8b6451"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PYME",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/client/pyme/63014cea071d657efb8b6451",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"pyme",
+								"63014cea071d657efb8b6451"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CircuitBreaker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/payment/62f2875000a7d4046f4db4d5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"payment",
+								"62f2875000a7d4046f4db4d5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/payment/62f2875000a7d4046f4db4d5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"payment",
+								"62f2875000a7d4046f4db4d5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"activeId\" : \"63028f1d3b8a3d0bbc07e9e6\",\r\n    \"clientId\" : \"63014cea071d657efb8b6451\",\r\n    \"creditId\" : \"63028f1d3b8a3d0bbc07e9e5\",\r\n    \"debitCardId\" : \"A001\",\r\n    \"mont\" : 1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"62f28988c9bd312188ad997c\",\r\n    \"activeId\": \"62f179523e898a2\",\r\n    \"clientId\": \"62edbc767ba3a05551fb10d6\",\r\n    \"creditId\": \"62f179523e898a2cf9d6d51d\",\r\n    \"mont\": 40.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/api/payment/62f28988c9bd312188ad997c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"payment",
+								"62f28988c9bd312188ad997c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDebt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/payment/debt/63028f1d3b8a3d0bbc07e9e6/63028f1d3b8a3d0bbc07e9e5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"api",
+								"payment",
+								"debt",
+								"63028f1d3b8a3d0bbc07e9e6",
+								"63028f1d3b8a3d0bbc07e9e5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Persons",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/person",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/person/62f2bf127f390a4a7cf365e5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"person",
+								"62f2bf127f390a4a7cf365e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"ADRIAN\",\r\n    \"lastName\" : \"MELGAREJO\",\r\n    \"genre\" : 0,\r\n    \"documentId\" : \"12345678\",\r\n    \"phoneNumber\" : \"12345678\",\r\n    \"email\" : \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/person",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"62f2bf127f390a4a7cf365e5\",\r\n    \"firstName\": \"ADRIAN1\",\r\n    \"lastName\": \"MELGAREJO\",\r\n    \"genre\": \"MALE\",\r\n    \"documentId\": \"12345678\",\r\n    \"phoneNumber\": \"12345678\",\r\n    \"email\": \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/person/62f2bf127f390a4a7cf365e5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"person",
+								"62f2bf127f390a4a7cf365e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/person/62f2be869f39757a6aef59e2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"person",
+								"62f2be869f39757a6aef59e2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transactions",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/transaction/62f289a815d9f11d2a4b1b92",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction",
+								"62f289a815d9f11d2a4b1b92"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"activeId\" : \"63028f1d3b8a3d0bbc07e9e6\",\r\n    \"clientId\" : \"63014cea071d657efb8b6451\",\r\n    \"creditId\" : \"63028f1d3b8a3d0bbc07e9e5\",\r\n    \"mont\" : 5.0,\r\n    \"seller\" : \"METRO\",\r\n    \"ruc\" : \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8086/api/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"62f289a815d9f11d2a4b1b92\",\r\n    \"activeId\": \"62f179523e898a2cf9d6d51e\",\r\n    \"clientId\": \"62edbc767ba3a05551fb10d6\",\r\n    \"creditId\": \"62f179523e898a2cf9d6d51d\",\r\n    \"mont\": 600.0,\r\n    \"seller\": \"METRO\",\r\n    \"ruc\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8086/api/transaction/62f289a815d9f11d2a4b1b92",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction",
+								"62f289a815d9f11d2a4b1b92"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/transaction/62f289a815d9f11d2a4b1b92",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction",
+								"62f289a815d9f11d2a4b1b92"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBalance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/transaction/balance/63028f1d3b8a3d0bbc07e9e6/63028f1d3b8a3d0bbc07e9e5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction",
+								"balance",
+								"63028f1d3b8a3d0bbc07e9e6",
+								"63028f1d3b8a3d0bbc07e9e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "debt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/transaction/debt/63028f1d3b8a3d0bbc07e9e6/63028f1d3b8a3d0bbc07e9e5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction",
+								"debt",
+								"63028f1d3b8a3d0bbc07e9e6",
+								"63028f1d3b8a3d0bbc07e9e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "debtClient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/transaction/balance/client/63014cea071d657efb8b6451",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction",
+								"balance",
+								"client",
+								"63014cea071d657efb8b6451"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "first10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/api/transaction/report/credit/63028f1d3b8a3d0bbc07e9e6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"api",
+								"transaction",
+								"report",
+								"credit",
+								"63028f1d3b8a3d0bbc07e9e6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DebitCard",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pasiveId\" : \"63014d87790ad01dfe0b1c47\",\r\n    \"debitCardNumber\" : \"A001\",\r\n    \"main\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByDebitCardId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard/debit/A001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard",
+								"debit",
+								"A001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
