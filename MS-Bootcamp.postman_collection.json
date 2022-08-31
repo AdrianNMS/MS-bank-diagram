@@ -1666,102 +1666,6 @@
 			]
 		},
 		{
-			"name": "DebitCard",
-			"item": [
-				{
-					"name": "List",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8089/api/debitCard",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8089",
-							"path": [
-								"api",
-								"debitCard"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8089/api/debitCard",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8089",
-							"path": [
-								"api",
-								"debitCard"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Save",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"pasiveId\" : \"63014d87790ad01dfe0b1c47\",\r\n    \"debitCardNumber\" : \"A001\",\r\n    \"main\" : \"true\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8089/api/debitCard",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8089",
-							"path": [
-								"api",
-								"debitCard"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "getByDebitCardId",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8089/api/debitCard/debit/A001",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8089",
-							"path": [
-								"api",
-								"debitCard",
-								"debit",
-								"A001"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Person2",
 			"item": [
 				{
@@ -2266,6 +2170,364 @@
 								"api",
 								"wallet",
 								"630da6b1b0ceba29a6400694"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DebitCard",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard/630cecb69b7ab3368af5a6b4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard",
+								"630cecb69b7ab3368af5a6b4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindBydebitCard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard/debit/750076874",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard",
+								"debit",
+								"750076874"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMontdebitCard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard/mont/debit/750076874",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard",
+								"mont",
+								"debit",
+								"750076874"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pasiveId\" : \"630cec614a8c6c6b58c5c907\",\r\n    \"debitCardNumber\" : \"750076874\",\r\n    \"main\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pasiveId\" : \"630cec614a8c6c6b58c5c907\",\r\n    \"debitCardNumber\" : \"750076874\",\r\n    \"main\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard/630cecb69b7ab3368af5a6b4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard",
+								"630cecb69b7ab3368af5a6b4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/debitCard/630ced929b7ab3368af5a6b7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"debitCard",
+								"630ced929b7ab3368af5a6b7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transference",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8095/api/transference",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"api",
+								"transference"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8095/api/transference/630efd71989845638268e407",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"api",
+								"transference",
+								"630efd71989845638268e407"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idSender\" : {\r\n        \"idClient\" : \"fgddg\",\r\n        \"phone\" : \"964678226\"\r\n    },\r\n    \"idReceiver\" : {\r\n        \"idClient\" : \"dgd\",\r\n        \"phone\" : \"965000528\"\r\n    },\r\n    \"bootcoins\" : 50,\r\n    \"transferenceType\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/api/transference",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"api",
+								"transference"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idSender\" : {\r\n        \"idClient\" : \"fgddg\",\r\n        \"phone\" : \"964678226\"\r\n    },\r\n    \"idReceiver\" : {\r\n        \"idClient\" : \"dgd\",\r\n        \"phone\" : \"965000528\"\r\n    },\r\n    \"bootcoins\" : 5,\r\n    \"transferenceType\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/api/transference/630f86255a601d262f931f23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"api",
+								"transference",
+								"630f86255a601d262f931f23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8095/api/transference/630f112f3ced663c9c4a39aa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"api",
+								"transference",
+								"630f112f3ced663c9c4a39aa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"item": [
+				{
+					"name": "reportsByClient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/api/report/630cd9b505308d5a91b0d893",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"report",
+								"630cd9b505308d5a91b0d893"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reportsByDate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/api/report/general?idClient=630cd9b505308d5a91b0d893&max=30-08-2022&min=30-08-2022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"report",
+								"general"
+							],
+							"query": [
+								{
+									"key": "idClient",
+									"value": "630cd9b505308d5a91b0d893"
+								},
+								{
+									"key": "max",
+									"value": "30-08-2022"
+								},
+								{
+									"key": "min",
+									"value": "30-08-2022"
+								}
 							]
 						}
 					},
