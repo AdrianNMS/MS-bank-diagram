@@ -809,7 +809,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"createdDate\": \"2022-08-14 20:43:32\",\r\n    \"id\": \"62f9a4c42c17372331f87a9c\",\r\n    \"clientId\": \"62f1781d72f2306321b30a6d\",\r\n    \"pasivesType\": \"FIXEDTERM\",\r\n    \"mont\": 20000.0,\r\n    \"specificDay\": \"10-08-2022\"\r\n}",
+							"raw": "{\r\n    \"createdDate\": \"2022-08-20 16:09:27\",\r\n            \"id\": \"63014d87790ad01dfe0b1c47\",\r\n            \"clientId\": \"63014cea071d657efb8b6451\",\r\n            \"pasivesType\": \"SAVING\",\r\n            \"mont\": 50000.0,\r\n            \"specificDay\": \"10-08-2022\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -817,7 +817,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/pasive/62f9a4c42c17372331f87a9c",
+							"raw": "http://localhost:8082/api/pasive/63014d87790ad01dfe0b1c47",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -826,7 +826,7 @@
 							"path": [
 								"api",
 								"pasive",
-								"62f9a4c42c17372331f87a9c"
+								"63014d87790ad01dfe0b1c47"
 							]
 						}
 					},
@@ -1244,7 +1244,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"activeId\" : \"63028f1d3b8a3d0bbc07e9e6\",\r\n    \"clientId\" : \"63014cea071d657efb8b6451\",\r\n    \"creditId\" : \"63028f1d3b8a3d0bbc07e9e5\",\r\n    \"debitCardId\" : \"A001\",\r\n    \"mont\" : 1\r\n\r\n}",
+							"raw": "{\r\n    \"activeId\" : \"63028f1d3b8a3d0bbc07e9e6\",\r\n    \"clientId\" : \"63014cea071d657efb8b6451\",\r\n    \"creditId\" : \"63028f1d3b8a3d0bbc07e9e5\",\r\n    \"pasiveId\" : \"63014d87790ad01dfe0b1c47\",\r\n    \"mont\" : 1\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1350,7 +1350,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/api/person/62f2bf127f390a4a7cf365e5",
+							"raw": "http://localhost:8081/api/person/630b03e18d3dab381e110d6e",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1359,7 +1359,7 @@
 							"path": [
 								"api",
 								"person",
-								"62f2bf127f390a4a7cf365e5"
+								"630b03e18d3dab381e110d6e"
 							]
 						}
 					},
@@ -1754,6 +1754,518 @@
 								"debitCard",
 								"debit",
 								"A001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Person2",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8092/api/person2/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"api",
+								"person2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"ADRIAN\",\r\n    \"lastName\" : \"MELGAREJO\",\r\n    \"genre\" : 0,\r\n    \"documentId\" : \"12345678\",\r\n    \"phoneNumber\" : \"12345678\",\r\n    \"email\" : \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8092/api/person2/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"api",
+								"person2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8092/api/person2/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"api",
+								"person2",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"firstName\" : \"ADRIAN2\",\r\n    \"lastName\" : \"MELGAREJO\",\r\n    \"genre\" : 0,\r\n    \"documentId\" : \"12345678\",\r\n    \"phoneNumber\" : \"12345678\",\r\n    \"email\" : \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8092/api/person2/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"api",
+								"person2",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8092/api/person2/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"api",
+								"person2",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Person3",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8093/api/person3/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8093",
+							"path": [
+								"api",
+								"person3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8093/api/person3/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8093",
+							"path": [
+								"api",
+								"person3",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"ADRIAN\",\r\n    \"lastName\" : \"MELGAREJO\",\r\n    \"genre\" : 0,\r\n    \"documentId\" : \"12345678\",\r\n    \"phoneNumber\" : \"12345678\",\r\n    \"email\" : \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8093/api/person3/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8093",
+							"path": [
+								"api",
+								"person3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":8,\r\n    \"firstName\" : \"ADRIAN2\",\r\n    \"lastName\" : \"MELGAREJO\",\r\n    \"genre\" : 0,\r\n    \"documentId\" : \"12345678\",\r\n    \"phoneNumber\" : \"12345678\",\r\n    \"email\" : \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8093/api/person3/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8093",
+							"path": [
+								"api",
+								"person3",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8093/api/person3/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8093",
+							"path": [
+								"api",
+								"person3",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Yanki",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8096/api/yanki/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"yanki",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8096/api/yanki/630da55e660f902a85a36ea6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"yanki",
+								"630da55e660f902a85a36ea6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idDocument\" : \"1234567\",\r\n    \"phoneNumber\" : \"1234567\",\r\n    \"email\" : \"test@gmail.com\",\r\n    \"mont\" : 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8096/api/yanki/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"yanki",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : \"630da55e660f902a85a36ea6\",\r\n    \"idDocument\" : \"1234563\",\r\n    \"phoneNumber\" : \"1234567\",\r\n    \"email\" : \"test@gmail.com\",\r\n    \"mont\" : 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8096/api/yanki/630da55e660f902a85a36ea6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"yanki",
+								"630da55e660f902a85a36ea6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8096/api/yanki/630da55e660f902a85a36ea6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"yanki",
+								"630da55e660f902a85a36ea6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wallet",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8094/api/wallet/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"wallet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8094/api/wallet/630da6e1b0ceba29a6400695",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"wallet",
+								"630da6e1b0ceba29a6400695"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idDocument\" : \"1234567\",\r\n    \"phoneNumber\" : \"1234567\",\r\n    \"email\" : \"test@gmaill.com\",\r\n    \"bootcoins\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/api/wallet/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"wallet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"630da6b1b0ceba29a6400694\",\r\n        \"idDocument\": \"1234568\",\r\n        \"phoneNumber\": \"1234567\",\r\n        \"email\": \"test@gmaill.com\",\r\n        \"bootcoins\": 0.0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/api/wallet/630da6b1b0ceba29a6400694",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"wallet",
+								"630da6b1b0ceba29a6400694"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8094/api/wallet/630da6b1b0ceba29a6400694",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"wallet",
+								"630da6b1b0ceba29a6400694"
 							]
 						}
 					},
